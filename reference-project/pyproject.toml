@@ -1,0 +1,33 @@
+[project]
+name = "mcp-auth-demo"
+version = "1.0.0"
+description = "Minimalist MCP server with Google OAuth demonstrating all FastMCP features"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp==2.13.0.1",
+    "python-dotenv==1.2.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==8.4.2",
+    "pytest-asyncio==1.2.0",
+    "pytest-mock==3.15.1",
+    "httpx==0.28.1",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "integration: Integration tests (require running server)",
+]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+]

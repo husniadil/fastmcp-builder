@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mcp-auth-demo": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/mcp-auth-demo",
+        "run",
+        "python",
+        "-m",
+        "app.main"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "fastmcp-builder-skill",
+  "owner": {
+    "name": "Husni Adil Makmur",
+    "email": "husni.adil@gmail.com"
+  },
+  "metadata": {
+    "description": "FastMCP Builder - Production-ready MCP server development skill",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "fastmcp-builder",
+      "description": "Build production-ready MCP servers using FastMCP framework with proven patterns for tools, resources, prompts, OAuth authentication, and comprehensive testing. Use this when creating FastMCP-based MCP servers with features like Google OAuth, multiple resource types, testing with FastMCP Client, or complex tool implementations.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./"]
+    }
+  ]
+}
